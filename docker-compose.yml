@@ -1,0 +1,11 @@
+services:
+  fizzbuzz-service:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+    container_name: fizzbuzz
+    ports:
+      - '8080:8080'
+
+volumes:
+  fizz_volume:
